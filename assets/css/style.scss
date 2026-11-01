@@ -1,0 +1,183 @@
+
+---
+---
+
+@import "{{ site.theme }}";
+
+/* AINA community styling */
+
+:root {
+  --aina-navy: #183653;
+  --aina-orange: #e58a35;
+  --aina-cream: #faf7f0;
+  --aina-text: #354354;
+}
+
+body {
+  background: var(--aina-cream);
+  color: var(--aina-text);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-header {
+  background-color: var(--aina-navy);
+  background-image: linear-gradient(120deg, #183653, #315b76);
+  padding: 3rem 1rem;
+}
+
+.project-name {
+  font-size: 2.8rem;
+  letter-spacing: 2px;
+}
+
+.project-tagline {
+  font-size: 1.15rem;
+}
+
+.main-content {
+  max-width: 900px;
+  padding-top: 2rem;
+}
+
+.main-content h1,
+.main-content h2,
+.main-content h3 {
+  color: var(--aina-navy);
+}
+
+.main-content h2 {
+  border-bottom: 2px solid #eadbc7;
+  padding-bottom: 8px;
+  margin-top: 2rem;
+}
+
+.aina-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+  margin-bottom: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: 1px solid #e8e1d6;
+}
+
+.aina-nav a {
+  color: var(--aina-navy);
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.aina-nav a:hover {
+  background: var(--aina-cream);
+  color: var(--aina-orange);
+}
+
+.aina-welcome {
+  background: #edf2f4;
+  padding: 35px;
+  border-radius: 10px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.aina-welcome h2 {
+  border: none;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.aina-welcome p {
+  max-width: 650px;
+  margin: 15px auto;
+}
+
+.aina-eyebrow {
+  color: var(--aina-orange);
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+.aina-button {
+  display: inline-block;
+  background: var(--aina-orange);
+  color: white !important;
+  padding: 11px 19px;
+  margin: 8px 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+.aina-button:hover {
+  background: var(--aina-navy);
+}
+
+.aina-button-light {
+  background: var(--aina-navy);
+}
+
+.aina-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 25px 0;
+}
+
+.aina-card {
+  background: white;
+  border: 1px solid #e8e1d6;
+  border-top: 4px solid var(--aina-orange);
+  border-radius: 8px;
+  padding: 22px;
+  margin: 20px 0;
+}
+
+.aina-card h3 {
+  margin-top: 0;
+}
+
+.aina-card a {
+  color: var(--aina-navy);
+  font-weight: bold;
+}
+
+.aina-placeholder {
+  background: #edf0f2;
+  border: 2px dashed #bac5ce;
+  border-radius: 8px;
+  padding: 35px 20px;
+  text-align: center;
+  color: #667586;
+  margin: 20px 0;
+}
+
+.aina-placeholder p {
+  margin-bottom: 0;
+}
+
+.site-footer {
+  background: var(--aina-navy);
+}
+
+@media (max-width: 650px) {
+  .aina-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .aina-welcome {
+    padding: 22px;
+  }
+
+  .project-name {
+    font-size: 2.1rem;
+  }
+
+  .aina-nav {
+    gap: 4px;
+  }
+}
