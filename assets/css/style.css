@@ -1,0 +1,274 @@
+
+/* =====================================
+   AINA - Austria India Network Association
+   Main Website Stylesheet
+   ===================================== */
+
+/* 1. Colour palette */
+
+:root {
+  --navy: #17334a;
+  --burgundy: #8b3045;
+  --cream: #fbf8f2;
+  --white: #ffffff;
+  --light: #f1eee8;
+  --text: #333b43;
+  --muted: #68737d;
+  --border: #e5e0d8;
+}
+
+/* 2. General styles */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: var(--white);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+a {
+  color: var(--burgundy);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Header and navigation */
+
+.site-header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 18px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.main-nav a {
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #f1c7ce;
+  text-decoration: none;
+  border-bottom: 2px solid #f1c7ce;
+}
+
+/* 4. Homepage hero section */
+
+.hero {
+  background: var(--cream);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.eyebrow {
+  color: var(--burgundy);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  color: var(--navy);
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.15;
+  margin: 15px 0 24px;
+}
+
+.hero-text {
+  max-width: 680px;
+  margin: 0 auto 32px;
+  color: var(--muted);
+  font-size: 19px;
+}
+
+/* 5. Buttons */
+
+.button {
+  display: inline-block;
+  background: var(--burgundy);
+  color: var(--white);
+  padding: 13px 28px;
+  border-radius: 5px;
+  font-weight: 700;
+  transition: background 0.2s ease;
+}
+
+.button:hover {
+  background: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.button-light {
+  background: var(--white);
+  color: var(--navy);
+}
+
+.button-light:hover {
+  background: var(--cream);
+  color: var(--navy);
+}
+
+/* 6. General page sections */
+
+.section {
+  padding: 75px 0;
+}
+
+.section h2 {
+  color: var(--navy);
+  font-size: 32px;
+  margin: 0 0 22px;
+}
+
+.section p {
+  max-width: 850px;
+}
+
+.section-light {
+  background: var(--cream);
+}
+
+/* 7. Information cards */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 35px;
+}
+
+.info-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--burgundy);
+  border-radius: 7px;
+  padding: 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.info-card h3 {
+  color: var(--navy);
+  margin-top: 0;
+  font-size: 21px;
+}
+
+.info-card p {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* 8. Contact banner */
+
+.contact-banner {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+}
+
+.contact-banner h2 {
+  color: var(--white);
+}
+
+.contact-banner p {
+  margin: 0 auto 25px;
+}
+
+/* 9. Footer */
+
+.site-footer {
+  background: #102638;
+  color: #e9edf0;
+  text-align: center;
+  padding: 35px 0;
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+/* 10. Mobile and tablet layout */
+
+@media (max-width: 700px) {
+
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .main-nav a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 65px 0;
+  }
+
+  .hero-text {
+    font-size: 17px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section h2 {
+    font-size: 27px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
