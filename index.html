@@ -1,72 +1,132 @@
 
----
-layout: default
-title: Welcome to AINA
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% include nav.html %}
+  <title>About AINA | Austria India Network Association</title>
 
-<div class="aina-welcome">
-  <p class="aina-eyebrow">AUSTRIA INDIA NETWORK ASSOCIATION</p>
+  <meta name="description" content="Austria India Network Association (AINA) brings people together through community, cultural exchange, networking and collaboration.">
 
-  <h2>Welcome to AINA</h2>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
 
-  <p class="aina-tagline">
-    Connecting People, Cultures &amp; Opportunities
-  </p>
+<body>
 
-  <p>
-    AINA brings people together through community,
-    cultural exchange, networking and collaboration.
-  </p>
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="logo" href="index.html">AINA</a>
 
-  <a class="aina-button" href="{{ '/membership.html' | relative_url }}">
-    Become a Member
-  </a>
+      <nav class="main-nav">
+        <a href="index.html" class="active">About</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-  <a class="aina-button aina-button-light" href="{{ '/about.html' | relative_url }}">
-    Discover AINA
-  </a>
-</div>
+  <main>
 
-<h2>Welcome to our community</h2>
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">AUSTRIA INDIA NETWORK ASSOCIATION</p>
 
-<p>
-  AINA aims to create a welcoming network where people can meet,
-  share experiences, build relationships and explore opportunities.
-</p>
+        <h1>Connecting People,<br>
+        Cultures &amp; Opportunities</h1>
 
-<div class="aina-cards">
-  <div class="aina-card">
-    <h3>About AINA</h3>
-    <p>Discover our association, mission and vision.</p>
-    <a href="{{ '/about.html' | relative_url }}">Learn more →</a>
-  </div>
+        <p class="hero-text">
+          Building connections between people and communities
+          through cultural exchange, friendship and collaboration.
+        </p>
 
-  <div class="aina-card">
-    <h3>Events</h3>
-    <p>Discover our upcoming activities and gatherings.</p>
-    <a href="{{ '/events.html' | relative_url }}">Explore events →</a>
-  </div>
+        <a class="button" href="events.html">Discover Our Events</a>
+      </div>
+    </section>
 
-  <div class="aina-card">
-    <h3>Membership</h3>
-    <p>Become part of our growing community.</p>
-    <a href="{{ '/membership.html' | relative_url }}">Join AINA →</a>
-  </div>
-</div>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">WHO WE ARE</p>
+        <h2>About AINA</h2>
 
-<h2>AINA Moments</h2>
+        <p>
+          The Austria India Network Association (AINA) is a community
+          network dedicated to bringing people together and fostering
+          meaningful connections between Austria and India.
+        </p>
 
-<div class="aina-placeholder">
-  <strong>Our community gallery is coming soon.</strong>
-  <p>AINA photographs will be added here when available.</p>
-</div>
+        <p>
+          We aim to create opportunities for cultural exchange,
+          networking, friendship and collaboration, while celebrating
+          the diversity and shared experiences of our communities.
+        </p>
+      </div>
+    </section>
 
-<h2>Stay Connected</h2>
+    <section class="section section-light">
+      <div class="container">
+        <h2>Our Mission</h2>
 
-<p>We look forward to connecting with you.</p>
+        <p>
+          To connect people, encourage cultural understanding,
+          strengthen community relationships and create opportunities
+          for meaningful engagement between Austria and India.
+        </p>
+      </div>
+    </section>
 
-<a class="aina-button" href="{{ '/contact.html' | relative_url }}">
-  Contact AINA
-</a>
+    <section class="section">
+      <div class="container">
+        <h2>What We Do</h2>
+
+        <div class="card-grid">
+          <article class="info-card">
+            <h3>Community</h3>
+            <p>
+              Bringing people together and building a welcoming
+              network through shared experiences.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Culture</h3>
+            <p>
+              Celebrating cultural diversity and encouraging
+              exchange between communities.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <h3>Connections</h3>
+            <p>
+              Creating opportunities for networking,
+              collaboration and friendship.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-banner">
+      <div class="container">
+        <h2>Be Part of the AINA Community</h2>
+        <p>We look forward to connecting with you.</p>
+        <a class="button button-light" href="contact.html">
+          Get in Touch
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>AINA</strong> — Austria India Network Association</p>
+      <p>Connecting People, Cultures &amp; Opportunities</p>
+      <p>&copy; 2026 AINA. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
