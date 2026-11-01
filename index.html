@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AINA - Austrian Indian Network Association. Connecting people, cultures and opportunities.">
+  <title>AINA | Austrian Indian Network Association</title>
+
+  <style>
+    :root {
+      --navy: #183153;
+      --orange: #e58a35;
+      --cream: #faf8f3;
+      --text: #303943;
+      --muted: #687585;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      background: var(--white);
+      padding: 18px 0;
+      border-bottom: 1px solid #e9e5dd;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: var(--navy);
+      letter-spacing: 1px;
+    }
+
+    .logo span {
+      color: var(--orange);
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--orange);
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #183153, #31577d);
+      color: var(--white);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 56px);
+      margin-bottom: 18px;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 28px;
+      font-size: 18px;
+      color: #edf1f6;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--orange);
+      color: var(--white);
+      padding: 12px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #cf7422;
+    }
+
+    .button-outline {
+      background: transparent;
+      border: 1px solid var(--white);
+    }
+
+    section {
+      padding: 65px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--navy);
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .section-intro {
+      max-width: 700px;
+      text-align: center;
+      margin: 0 auto 35px;
+      color: var(--muted);
+    }
+
+    .about {
+      background: var(--white);
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+    }
+
+    .info-card {
+      background: var(--cream);
+      padding: 28px;
+      border-radius: 8px;
+      border-top: 4px solid var(--orange);
+    }
+
+    .info-card h3 {
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .placeholder {
+      min-height: 190px;
+      background: #e9edf1;
+      border: 2px dashed #b7c2ce;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 25px;
+      color: #687585;
+      font-size: 15px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .event-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 25px;
+      border: 1px solid #e9e5dd;
+    }
+
+    .event-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .event-card p {
+      color: var(--muted);
+    }
+
+    .contact {
+      background: var(--white);
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 28px 15px;
+    }
+
+    footer a {
+      color: #ffd29e;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 700px) {
+      .two-columns,
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .hero {
+        padding: 70px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a href="#" class="logo">AINA<span>.</span></a>
+
+      <nav>
+        <a href="#about">About</a>
+        <a href="#mission">Mission</a>
+        <a href="#events">Events</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Homepage banner: no external image -->
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to AINA</h1>
+        <p>
+          Austrian Indian Network Association brings people,
+          cultures and opportunities together.
+        </p>
+        <a href="#about" class="button">Discover AINA</a>
+        <a href="#contact" class="button button-outline">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About AINA</h2>
+        <p class="section-intro">
+          AINA is an association dedicated to
+          building connections and creating opportunities.
+          We aim to bring people together through culture,
+          collaboration and shared experiences.
+        </p>
+
+        <div class="two-columns">
+          <div class="info-card" id="mission">
+            <h3>Our Mission</h3>
+            <p>
+              To connect individuals and communities, encourage
+              cultural exchange, and create opportunities for
+              networking, learning, and collaboration.
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3>Our Vision</h3>
+            <p>
+              To build an inclusive and vibrant network that
+              strengthens relationships between communities
+              and supports meaningful initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+      <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-intro">
+          Stay connected with our activities and upcoming gatherings.
+          Event details will be published here.
+        </p>
+
+        <div class="two-columns">
+          <div class="event-card">
+            <h3>Upcoming Event</h3>
+            <p>Date: To be announced</p>
+            <p>Details will be shared soon.</p>
+          </div>
+
+          <div class="event-card">
+            <h3>Community Activities</h3>
+            <p>
+              We look forward to organising networking,
+              cultural and community events.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery: neutral placeholders, no images -->
+    <section id="gallery" class="about">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <p class="section-intro">
+          A space to share moments from AINA events and activities.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="placeholder">AINA Photos Coming Soon</div>
+          <div class="placeholder">Community Moments Coming Soon</div>
+          <div class="placeholder">Events and Activities Coming Soon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- News -->
+    <section id="news">
+      <div class="container">
+        <h2 class="section-title">News & Updates</h2>
+        <p class="section-intro">
+          Read the latest announcements and community stories
+          and updates from AINA.
+        </p>
+
+        <div class="event-card">
+          <h3>Welcome to AINA</h3>
+          <p>
+            We are working on building our community and sharing
+            more news and updates soon. Please check back for
+            announcements and upcoming activities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Membership -->
+    <section class="about" id="membership">
+      <div class="container">
+        <h2 class="section-title">Become a Member</h2>
+        <p class="section-intro">
+          Interested in joining AINA? We welcome people who would
+          like to connect, participate and contribute to our community.
+        </p>
+
+        <div style="text-align:center;">
+          <a href="mailto:info@example.org?subject=AINA%20Membership%20Enquiry"
+             class="button">Enquire About Membership</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p>We would love to hear from you.</p>
+        <p>Email: <a href="mailto:info@example.org">info@example.org</a></p>
+        <p>
+          Instagram: <a href="#">Add Instagram Link</a>
+          |
+          LinkedIn: <a href="#">Add LinkedIn Link</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 AINA: Austrian Indian Network Association</p>
+    <p>Connecting people, cultures and opportunities.</p>
+  </footer>
+
+</body>
+</html>
