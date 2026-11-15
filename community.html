@@ -1,297 +1,188 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Community | Austria India Network Association</title>
-
-  <meta name="description" content="Discover AINA community gatherings, friendships and events in Vienna.">
-
+  <title>Community | AINA</title>
   <link rel="stylesheet" href="assets/css/style.css">
 
   <style>
-    /* Community event layout */
-
-    .event-list {
-      display: flex;
-      flex-direction: column;
-      gap: 45px;
-      margin-top: 35px;
+    .events-page {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
     }
 
-    .community-event {
-      display: grid;
-      grid-template-columns: 1fr 1.5fr;
-      gap: 30px;
-      align-items: start;
-      padding: 28px;
+    .events-page h1 {
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .event-card {
       background: var(--white);
       border: 1px solid var(--border);
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 35px;
     }
 
     .event-image-placeholder {
-      min-height: 240px;
+      height: 260px;
+      background: var(--light);
       display: flex;
       align-items: center;
       justify-content: center;
+      color: var(--muted);
       text-align: center;
       padding: 20px;
-      background: var(--cream);
-      border: 2px dashed var(--border);
-      border-radius: 7px;
-      color: var(--muted);
     }
 
-    .event-image-placeholder p {
-      margin: 0;
+    .event-image img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      display: block;
     }
 
-    .event-details h3 {
+    .event-content {
+      padding: 25px;
+    }
+
+    .event-content h2 {
       color: var(--navy);
-      font-size: 25px;
-      margin: 0 0 12px;
+      margin-top: 0;
+      margin-bottom: 8px;
     }
 
     .event-date {
       color: var(--burgundy);
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 18px;
     }
 
-    .event-details p {
-      margin-top: 0;
-    }
-
-    @media (max-width: 700px) {
-      .community-event {
-        grid-template-columns: 1fr;
-        padding: 20px;
-        gap: 20px;
-      }
-
-      .event-image-placeholder {
-        min-height: 200px;
-      }
+    .event-content p {
+      line-height: 1.8;
+      color: var(--text);
     }
   </style>
-
 </head>
 
 <body>
 
-  <!-- HEADER AND NAVIGATION -->
-
   <header class="site-header">
-    <div class="container header-content">
-
-      <a class="logo" href="index.html">AINA</a>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">AINA</a>
 
       <nav class="main-nav">
         <a href="index.html">About</a>
         <a href="contact.html">Contact Us</a>
       </nav>
-
     </div>
   </header>
 
+  <main class="events-page">
 
-  <main>
+    <h1>Community</h1>
 
-    <!-- COMMUNITY INTRODUCTION -->
-
-    <section class="hero">
-      <div class="container">
-
-        <p class="eyebrow">AINA EVENTS</p>
-
-        <h1>Community</h1>
-
-        <p class="hero-text">
-          Bringing people together, building friendships
-          and creating a welcoming community.
-        </p>
-
+    <!-- Event 1: First Brunch -->
+    <article class="event-card">
+      <div class="event-image-placeholder">
+        <span>Photo placeholder – First Brunch</span>
       </div>
-    </section>
 
-
-    <!-- COMMUNITY EVENTS -->
-
-    <section class="section">
-      <div class="container">
-
-        <h2>Community Events</h2>
+      <div class="event-content">
+        <h2>First Brunch</h2>
+        <div class="event-date">30 November 2025 · Café Alt Wien, Vienna</div>
 
         <p>
-          At AINA, community is at the heart of everything we do.
-          Through informal gatherings, shared celebrations and
-          friendly meet-ups, we create opportunities for people
-          to connect, exchange experiences and build lasting friendships.
+          On 30 November 2025, AINA held its first brunch meeting at Café Alt Wien,
+          one of Vienna’s traditional coffee houses. The gathering was relaxed and
+          informal, bringing together a wonderfully diverse group of Indians living
+          in Vienna, from people settled here for many years with their families to
+          young interns and students working at various organisations.
         </p>
 
-
-        <div class="event-list">
-
-
-          <!-- EVENT 1: FIRST BRUNCH -->
-
-          <article class="community-event">
-
-            <div class="event-image-placeholder">
-              <p>
-                <strong>First Brunch</strong><br>
-                Event photograph placeholder
-              </p>
-            </div>
-
-            <div class="event-details">
-
-              <p class="eyebrow">COMMUNITY</p>
-
-              <h3>First Brunch</h3>
-
-              <p class="event-date">
-                30 November 2025 | Café Alt Wien, Vienna
-              </p>
-
-              <p>
-                On 30 November 2025, AINA held its first brunch meeting
-                at Café Alt Wien, one of Vienna’s traditional coffee houses.
-                The gathering was relaxed and informal, bringing together
-                a wonderfully diverse group of Indians living in Vienna,
-                from people settled here for many years with their families
-                to young interns and students working at various organisations.
-                Over a leisurely brunch, conversations flowed easily across
-                age groups and backgrounds. This first meeting laid the
-                foundation for the gatherings that followed and set the
-                friendly, welcoming tone that has defined our network ever since.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <!-- EVENT 2: CHRISTMAS MARKET HOPPING -->
-
-          <article class="community-event">
-
-            <div class="event-image-placeholder">
-              <p>
-                <strong>Christmas Market Hopping</strong><br>
-                Event photograph placeholder
-              </p>
-            </div>
-
-            <div class="event-details">
-
-              <p class="eyebrow">COMMUNITY</p>
-
-              <h3>Christmas Market Hopping</h3>
-
-              <p class="event-date">
-                19 December 2024 | Spittelberg and Rathausplatz, Vienna
-              </p>
-
-              <p>
-                On 19 December 2024, some AINA members came together
-                for an evening exploring two of Vienna’s much-loved
-                Christmas markets. We began in the neighbourhood of
-                Spittelberg, walking through its narrow streets filled
-                with the aromas of baking and Glühwein, and browsing
-                the market’s stalls filled with handcrafted gifts,
-                woollen accessories, ceramics, glassware and other
-                festive finds before making our way towards Rathausplatz.
-              </p>
-
-              <p>
-                The walk between the two markets gave members time to chat,
-                catch up, and enjoy Vienna in its winter setting. At
-                Rathausplatz, we continued the evening among the lights,
-                seasonal stalls, and lively atmosphere of one of the city’s
-                most recognisable Christmas markets.
-              </p>
-
-              <p>
-                The evening was deliberately simple: a chance to step away
-                from work and research, meet fellow members outside a formal
-                setting, and enjoy a shared experience in the city we call home.
-                For AINA, such gatherings are an important part of building
-                a community that extends beyond professional connections,
-                creating space for friendships, conversations, and a sense
-                of belonging among members of the India-Austria community.
-              </p>
-
-            </div>
-
-          </article>
-
-
-          <!-- EVENT 3: POTLUCK -->
-
-          <article class="community-event">
-
-            <div class="event-image-placeholder">
-              <p>
-                <strong>Potluck at Dr. Sengupta's</strong><br>
-                Event photograph placeholder
-              </p>
-            </div>
-
-            <div class="event-details">
-
-              <p class="eyebrow">COMMUNITY</p>
-
-              <h3>Potluck at Dr. Sengupta's</h3>
-
-              <p class="event-date">
-                Date to be added
-              </p>
-
-              <p>
-                Continuing the spirit of our friendly meet-ups, AINA
-                celebrated India’s Independence Day spirit with a potluck
-                hosted by Dr. SenGupta at his apartment. Members brought
-                a variety of dishes, creating a colourful spread that
-                sparked lively conversations about India’s rich culinary
-                diversity. Over food, we also discussed professional
-                opportunities, networking and the growing ties between
-                India and Austria. The day ended with a relaxed walk along
-                the Danube, a perfect close to an afternoon of cultural
-                exchange and connection.
-              </p>
-
-            </div>
-
-          </article>
-
-
-        </div>
-
+        <p>
+          Over a leisurely brunch, conversations flowed easily across age groups
+          and backgrounds. This first meeting laid the foundation for the gatherings
+          that followed and set the friendly, welcoming tone that has defined our
+          network ever since.
+        </p>
       </div>
-    </section>
+    </article>
+
+    <!-- Event 2: Christmas Market Hopping -->
+    <article class="event-card">
+      <div class="event-image-placeholder">
+        <span>Photo placeholder – Christmas Market Hopping</span>
+      </div>
+
+      <div class="event-content">
+        <h2>Christmas Market Hopping</h2>
+        <div class="event-date">19 December 2024 · Vienna</div>
+
+        <p>
+          On 19 December 2024, some AINA members came together for an evening
+          exploring two of Vienna’s much-loved Christmas markets. We began in the
+          neighbourhood of Spittelberg, walking through its narrow streets filled
+          with the aromas of baking and Glühwein, and browsing the market’s stalls
+          filled with handcrafted gifts, woollen accessories, ceramics, glassware
+          and other festive finds before making our way towards Rathausplatz.
+        </p>
+
+        <p>
+          The walk between the two markets gave members time to chat, catch up,
+          and enjoy Vienna in its winter setting. At Rathausplatz, we continued the
+          evening among the lights, seasonal stalls, and lively atmosphere of one
+          of the city’s most recognisable Christmas markets.
+        </p>
+
+        <p>
+          The evening was deliberately simple: a chance to step away from work
+          and research, meet fellow members outside a formal setting, and enjoy a
+          shared experience in the city we call home. For AINA, such gatherings
+          are an important part of building a community that extends beyond
+          professional connections, creating space for friendships, conversations,
+          and a sense of belonging among members of the India-Austria community.
+        </p>
+      </div>
+    </article>
+
+    <!-- Event 3: Potluck -->
+    <article class="event-card">
+      <div class="event-image-placeholder">
+        <span>Photo placeholder – Independence Day Potluck</span>
+      </div>
+
+      <div class="event-content">
+        <h2>Potluck at Dr. Sengupta’s</h2>
+
+        <p>
+          Continuing the spirit of our friendly meet-ups, AINA celebrated India’s
+          Independence Day spirit with a potluck hosted by Dr. SenGupta at his
+          apartment. Members brought a variety of dishes, creating a colourful
+          spread that sparked lively conversations about India’s rich culinary
+          diversity.
+        </p>
+
+        <p>
+          Over food, we also discussed professional opportunities, networking
+          and the growing ties between India and Austria. The day ended with a
+          relaxed walk along the Danube, a perfect close to an afternoon of
+          cultural exchange and connection.
+        </p>
+      </div>
+    </article>
 
   </main>
 
-
-  <!-- FOOTER -->
-
   <footer class="site-footer">
     <div class="container">
-
-      <p>
-        <strong>AINA</strong> Austria India Network Association
-      </p>
-
+      <p>Austria India Network Association</p>
       <p>Connecting People, Cultures &amp; Opportunities</p>
-
-      <p>&copy; 2026 AINA. All rights reserved.</p>
-
+      <p>© 2026 AINA. All rights reserved.</p>
     </div>
   </footer>
 
