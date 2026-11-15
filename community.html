@@ -66,6 +66,29 @@
       line-height: 1.8;
       color: var(--text);
     }
+
+
+.event-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.event-image img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 7px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .event-image {
+    grid-template-columns: 1fr;
+  }
+}
+    
   </style>
 </head>
 
