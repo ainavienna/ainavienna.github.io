@@ -272,3 +272,32 @@ a:hover {
   }
 
 }
+
+
+/* 11. Four category cards */
+
+.card-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.info-card {
+  display: block;
+  color: var(--text);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  text-decoration: none;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Keep category cards in one column on mobile */
+
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
